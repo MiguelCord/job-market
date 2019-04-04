@@ -1,6 +1,7 @@
 {
   "name": "job-market",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,9 +13,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "latest-version": "^5.1.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
@@ -31,5 +29,9 @@
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
   },
-  "description": ""
+  "dependencies": {
+    "latest-version": "^5.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
