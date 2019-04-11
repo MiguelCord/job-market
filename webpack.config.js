@@ -5,10 +5,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const devMode = process.env.NODE_ENV !== 'production';
 
+const buildDir = path.resolve(__dirname, 'build');
+
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/js/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: buildDir,
     publicPath: '/',
     filename: 'bundle.js',
   },
@@ -32,6 +34,9 @@ module.exports = {
         ]
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   plugins: [
     new HtmlWebpackPlugin({
