@@ -1,6 +1,7 @@
 import React from 'react';
 import "../../css/main.scss";
 import Button from './button-sign';
+import Nav from './nav';
 
 class Sign extends React.Component {
     constructor (props) {
@@ -19,7 +20,7 @@ class Sign extends React.Component {
 
     render () {
         const signIn = this.state.signIn;
-
+        console.log(signIn);
         const signInForm = (
             <div className="form-container sign-in-container">
                 <form action="#">
@@ -93,6 +94,7 @@ class Sign extends React.Component {
 
         return (
             <div className={signIn ? "container sign" : "container right-panel-active"} id="container">
+                <Nav signIn />
                 { signIn ? signInForm : signUpForm }
                 <div className="overlay-container">
                     <div className="overlay">
