@@ -1,1 +1,1 @@
-Sign In / Sign Up page template
+# Sign In / Sign Up page template
